@@ -9,8 +9,19 @@ import { useState } from "react";
 function Header() {
   return (
     <div>
+<<<<<<< HEAD
       <h2>React Components</h2>
       <p>Components make the UI reusable and organized.</p>
+=======
+      <h1>Hello React</h1>
+      <h1>Its me Aayush </h1>
+
+      <p>You clicked {count} times</p>
+
+      <button onClick={() => setCount(count + 1)}>
+        Click Me
+      </button>
+>>>>>>> de1a06889a601e738bbb64d56fd8df7613b774ce
     </div>
   );
 }
