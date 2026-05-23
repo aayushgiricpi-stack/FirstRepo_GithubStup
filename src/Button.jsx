@@ -1,6 +1,7 @@
 function Button(props) {
   return (
     <button
+      onClick={props.onClick}
       style={{
         padding: "10px 20px",
         margin: "10px",
@@ -8,6 +9,7 @@ function Button(props) {
         color: "white",
         border: "none",
         borderRadius: "5px",
+        cursor: "pointer",
       }}
     >
       {props.text}
