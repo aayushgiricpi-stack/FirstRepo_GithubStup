@@ -6,6 +6,8 @@ function Login(props) {
   const handleLogin = () => {
 
     alert("Login Successful");
+
+    props.loginSuccess();
   };
 
   return (
@@ -13,7 +15,7 @@ function Login(props) {
 
       <h2>Login Form</h2>
 
-      {/* Email Input */}
+      {/* Email */}
       <input
         type="email"
         placeholder="Enter Email"
@@ -26,10 +28,21 @@ function Login(props) {
 
       <br />
 
-      {/* Password Input */}
+      {/* Password */}
       <input
         type="password"
         placeholder="Enter Password"
+        style={{
+          padding: "10px",
+          width: "250px",
+          marginBottom: "10px",
+        }}
+      />
+      <br />
+      
+       <input
+        type="phone"
+        placeholder="Enter Phone Number"
         style={{
           padding: "10px",
           width: "250px",
@@ -46,7 +59,6 @@ function Login(props) {
           backgroundColor: "blue",
           color: "white",
           border: "none",
-          cursor: "pointer",
         }}
       >
         Login
@@ -54,7 +66,7 @@ function Login(props) {
 
       <br /><br />
 
-      {/* Go To Register */}
+      {/* Register Navigation */}
       <button onClick={props.goToRegister}>
         Go To Register
       </button>
